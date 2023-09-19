@@ -86,7 +86,7 @@ select
 from booking
 group by user_id;
 
--- write a query to count the number of flight and hotel booking in each of the user segments for the year 2022
+-- 4. write a query to count the number of flight and hotel booking in each of the user segments for the year 2022
 select
 	u.segment,
 	sum(case when line_of_business = 'Flight' then 1 else 0 end) as Flight_flag,
